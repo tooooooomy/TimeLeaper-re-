@@ -10,10 +10,9 @@ import Foundation
 import UIKit
 
 class Countdown: UIViewController {
+
     
     @IBOutlet weak var event1: UILabel!
-    
-    
     
     
     var month2:Int!
@@ -505,6 +504,12 @@ class Countdown: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        event1.text =  appDelegate.ViewVal // Labelに値引き渡し用のプロパティから取得して設定する。
     }
 
     
