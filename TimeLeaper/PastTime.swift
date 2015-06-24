@@ -18,7 +18,6 @@ class PastTime: UIViewController, UICollectionViewDelegate, UICollectionViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         reload()
     }
     
@@ -26,12 +25,11 @@ class PastTime: UIViewController, UICollectionViewDelegate, UICollectionViewData
     
     private func reload() {
         getAllPhotosInfo()
-        
         collectionView.reloadData()
     }
     
     
-    // MARK: UICollectionViewDataSource
+    // -----------UICollectionViewDataSource---------------------
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return photoAssets.count
@@ -46,6 +44,7 @@ class PastTime: UIViewController, UICollectionViewDelegate, UICollectionViewData
         let imageView = cell.viewWithTag(1) as! UIImageView
         
         let manager: PHImageManager = PHImageManager()
+        
         manager.requestImageForAsset(asset,
             targetSize: imageView.frame.size,
             contentMode: .AspectFill,
@@ -55,12 +54,13 @@ class PastTime: UIViewController, UICollectionViewDelegate, UICollectionViewData
         
         return cell
     }
+    // -----------UICollectionViewDataSource---------------------
     
     
     
     
     
-    // MARK: Photos Framework
+    // ---------------Photos Framework------------------------
     
     private func getAllPhotosInfo() {
         photoAssets = []
@@ -77,13 +77,18 @@ class PastTime: UIViewController, UICollectionViewDelegate, UICollectionViewData
         println(photoAssets)
     }
     
-    //ホームに戻る
+    // ---------------Photos Framework------------------------
+    
+    
+    
+    //-------------------ホームに戻る---------------------------
     
     @IBAction func backhome(){
         
         self.presentingViewController?.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
         
     }
+    //-------------------ホームに戻る---------------------------
 
     
     

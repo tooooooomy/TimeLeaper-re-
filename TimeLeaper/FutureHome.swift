@@ -29,6 +29,12 @@ class FutureHome: UIViewController{
     }
     
     
+    
+    
+    
+    //-------------------------テキストフィールド----------------------------
+    
+    
     override func viewWillDisappear(animated: Bool) {
         super.viewDidDisappear(animated) //エフェクト関係のパラメタだと思うが、今回は使用しないので、基底クラスを呼び出して、終わり。
         var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //AppDelegateオブジェクトの呼び出し。as ◯◯はSwiftのキャスト表現
@@ -36,9 +42,13 @@ class FutureHome: UIViewController{
     }
     
     
+    //-------------------------テキストフィールド----------------------------
     
-    //ホームに戻る
+    
+    
+    //---------------------------ホームに戻る-------------------------------
     @IBAction func home(){
     self.dismissViewControllerAnimated(true, completion: nil)
+    //---------------------------ホームに戻る-------------------------------
     }
 }

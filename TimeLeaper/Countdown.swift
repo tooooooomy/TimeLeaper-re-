@@ -506,20 +506,24 @@ class Countdown: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    
+    //---------------------テキスト受け取りと表示----------------------
     override func viewWillAppear(animated: Bool) {
         super.viewDidDisappear(animated)
         var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         event1.text =  appDelegate.ViewVal // Labelに値引き渡し用のプロパティから取得して設定する。
     }
+    //--------------------テキスト受け取りと表示-----------------------
 
     
-    //ホームに戻る
+    //-----------------------ホームに戻る----------------------------
     
     @IBAction func backhome(){
         
         self.presentingViewController?.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
         
     }
-    
+     //-----------------------ホームに戻る----------------------------   
     
 }
