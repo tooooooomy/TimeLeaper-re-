@@ -77,6 +77,15 @@ class PastTime: UIViewController, UICollectionViewDelegate, UICollectionViewData
         println(photoAssets)
     }
     
+    //ホームに戻る
+    
+    @IBAction func backhome(){
+        
+        self.presentingViewController?.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+        
+    }
+
+    
     
 }
 
