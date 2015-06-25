@@ -503,6 +503,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="picker" destination="soy-SA-Zjz" id="Cde-lx-6Rg"/>
                         <outlet property="text" destination="mwP-oA-qny" id="5tK-tJ-JLT"/>
                     </connections>
                 </viewController>

@@ -12,7 +12,9 @@ import UIKit
 class Countdown: UIViewController {
 
     
+    
     @IBOutlet weak var event1: UILabel!
+    
     
     
     var month2:Int!
