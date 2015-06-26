@@ -22,13 +22,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             viewVal = newValue // TextFieldの値をここに設定する。
         }
     }
-    
-    var GetTime:[Int] = []
-    var NowTime:[Int] = []
-    var RemainingTime:[Int] = []
+
     
 
     var window: UIWindow?
+    
+    
+    //---------カウントダウン------
+    let myDate: NSDate = NSDate()
+    var getDate: NSDate = NSDate()
+    
+    //---------カウントダウン-----
+   
+
+   
+    
+
     
     
     

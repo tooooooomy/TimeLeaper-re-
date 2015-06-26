@@ -304,12 +304,6 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Event  1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oz0-Kc-o1e">
-                                <rect key="frame" x="49" y="179" width="276" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Event  2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQ6-sN-aZd">
                                 <rect key="frame" x="49" y="341" width="276" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -347,22 +341,28 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="one.gif" translatesAutoresizingMaskIntoConstraints="NO" id="hma-TZ-5I6">
                                 <rect key="frame" x="49" y="53" width="36" height="50"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Event  1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oz0-Kc-o1e">
+                                <rect key="frame" x="49" y="179" width="276" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="day1ImageView" destination="uG5-UP-6Rn" id="gcc-fR-UcJ"/>
-                        <outlet property="day2ImageView" destination="OEg-IP-MNI" id="DuX-AT-akE"/>
+                        <outlet property="day1ImageView" destination="uG5-UP-6Rn" id="038-AK-FdJ"/>
+                        <outlet property="day2ImageView" destination="OEg-IP-MNI" id="seu-Lb-nn7"/>
                         <outlet property="event1" destination="Oz0-Kc-o1e" id="FzY-ZX-Lyc"/>
-                        <outlet property="hour1ImageView" destination="Hze-qi-Bme" id="Uts-8V-dJO"/>
-                        <outlet property="hour2ImageView" destination="d5O-Tt-Mdc" id="z1L-dl-Hxo"/>
-                        <outlet property="minute1ImageView" destination="wtK-Nr-xL9" id="Gkr-hK-Otz"/>
-                        <outlet property="minute2ImageView" destination="mB7-bA-gge" id="ztm-3u-Vpk"/>
-                        <outlet property="month1ImageView" destination="1ih-2h-NUD" id="lEy-Eo-j7M"/>
-                        <outlet property="month2ImageView" destination="heg-2f-eSY" id="Ldd-3o-V4e"/>
-                        <outlet property="second1ImageView" destination="LoV-Nk-Vso" id="fcw-zR-fFC"/>
-                        <outlet property="second2ImageView" destination="rf1-i8-4bu" id="AIE-XQ-BMb"/>
+                        <outlet property="hour1ImageView" destination="Hze-qi-Bme" id="ftq-V2-XPJ"/>
+                        <outlet property="hour2ImageView" destination="d5O-Tt-Mdc" id="gdT-Zz-rln"/>
+                        <outlet property="minute1ImageView" destination="wtK-Nr-xL9" id="P9p-jr-Chw"/>
+                        <outlet property="minute2ImageView" destination="mB7-bA-gge" id="yNW-CS-pQX"/>
+                        <outlet property="month1ImageView" destination="1ih-2h-NUD" id="xx1-f4-voF"/>
+                        <outlet property="month2ImageView" destination="heg-2f-eSY" id="wPm-J4-oiV"/>
+                        <outlet property="second1ImageView" destination="LoV-Nk-Vso" id="feI-2L-MoK"/>
+                        <outlet property="second2ImageView" destination="rf1-i8-4bu" id="LwY-9q-fKg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lXJ-G0-n0d" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -471,12 +471,6 @@
                                     <action selector="home" destination="7A5-NT-TQF" eventType="touchUpInside" id="tf8-Ko-jU2"/>
                                 </connections>
                             </button>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="QNR-Dc-oZB">
-                                <rect key="frame" x="0.0" y="181" width="375" height="162"/>
-                                <date key="date" timeIntervalSinceReferenceDate="456295071.80215597">
-                                    <!--2015-06-18 04:37:51 +0000-->
-                                </date>
-                            </datePicker>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mwP-oA-qny">
                                 <rect key="frame" x="16" y="96" width="343" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -492,18 +486,27 @@
                                     <segue destination="MBp-Y6-Mtu" kind="show" id="8Ok-0H-WMr"/>
                                 </connections>
                             </button>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="soy-SA-Zjz">
-                                <rect key="frame" x="0.0" y="343" width="375" height="162"/>
-                                <date key="date" timeIntervalSinceReferenceDate="456655418.74970698">
-                                    <!--2015-06-22 08:43:38 +0000-->
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="t2m-8u-ydt">
+                                <rect key="frame" x="0.0" y="191" width="375" height="162"/>
+                                <date key="date" timeIntervalSinceReferenceDate="456944902.89117301">
+                                    <!--2015-06-25 17:08:22 +0000-->
                                 </date>
                             </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Eo-XL-jLl">
+                                <rect key="frame" x="164" y="434" width="30" height="30"/>
+                                <state key="normal" title="set">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="setTime:" destination="7A5-NT-TQF" eventType="touchUpInside" id="jIL-3d-8r5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="picker" destination="soy-SA-Zjz" id="Cde-lx-6Rg"/>
+                        <outlet property="picker" destination="t2m-8u-ydt" id="93q-Wh-ITq"/>
                         <outlet property="text" destination="mwP-oA-qny" id="5tK-tJ-JLT"/>
                     </connections>
                 </viewController>
