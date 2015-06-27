@@ -29,8 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     //---------カウントダウン------
-    let myDate: NSDate = NSDate()
-    var getDate: NSDate = NSDate()
+
+    var GetDate: NSDate?
     
     //---------カウントダウン-----
    

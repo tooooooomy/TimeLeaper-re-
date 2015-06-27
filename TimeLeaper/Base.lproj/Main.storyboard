@@ -483,6 +483,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="SetTime:" destination="7A5-NT-TQF" eventType="touchUpInside" id="F0H-tF-sOe"/>
                                     <segue destination="MBp-Y6-Mtu" kind="show" id="8Ok-0H-WMr"/>
                                 </connections>
                             </button>

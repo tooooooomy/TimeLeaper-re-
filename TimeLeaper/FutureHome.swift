@@ -27,17 +27,11 @@ class FutureHome: UIViewController{
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func setTime(sender: AnyObject) {
-    
-    let pickerDate: NSDate = picker.date
-    
-    appDelegate.getDate = pickerDate;
-        
-    println(appDelegate.getDate)
 
-        
+    //datepickerの値を受け渡し
+    @IBAction func SetTime(sender: AnyObject) {
+        appDelegate.GetDate = picker.date
     }
-    
     
     
     

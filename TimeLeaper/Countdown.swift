@@ -72,9 +72,19 @@ class Countdown: UIViewController {
         image9 = UIImage(named: "nine.gif")
         
         timer=NSTimer.scheduledTimerWithTimeInterval(1.0,target: self,
-            selector: Selector("Nowtime"),
+            selector: Selector("Update"),
             userInfo: nil,
             repeats: true)
+        
+    }
+    
+    
+    
+    func Update() {
+        
+        Nowtime()
+        
+        CountTime()
         
     }
     
@@ -152,7 +162,7 @@ class Countdown: UIViewController {
 
     
     //=======カウントダウン=============
-    func countTime(){
+    func CountTime(){
         let myDate: NSDate = NSDate()
         
         let myCalendar: NSCalendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!
@@ -163,7 +173,7 @@ class Countdown: UIViewController {
             NSCalendarUnit.CalendarUnitHour   |
             NSCalendarUnit.CalendarUnitMinute |
             NSCalendarUnit.CalendarUnitSecond,
-            fromDate: myDate, toDate: appDelegate.getDate, options: nil)
+            fromDate: myDate, toDate: appDelegate.GetDate!, options: nil)
         
         var year:Int = myComponetns.year
         var month:Int = myComponetns.month
@@ -172,7 +182,7 @@ class Countdown: UIViewController {
         var minute:Int = myComponetns.minute
         var second:Int = myComponetns.second
         
-        println(second)
+        
         
         //-------補正------------------
         if (month>9) {
