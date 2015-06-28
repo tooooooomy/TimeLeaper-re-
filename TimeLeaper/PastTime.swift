@@ -69,8 +69,31 @@ class PastTime: UIViewController, UICollectionViewDelegate, UICollectionViewData
         
         var options = PHFetchOptions()
         
+        
+        //取得した日付の年月日のみを取得
+        /*let myCalendar: NSCalendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!
+        var FromDate = myCalendar.components(NSCalendarUnit.CalendarUnitYear   |
+            NSCalendarUnit.CalendarUnitMonth  |
+            NSCalendarUnit.CalendarUnitDay    ,
+            fromDate: appDelegate.PhotoDate!)
+        println(FromDate)
+        
+        var FromDate_2 :
+        
+        
+        let ToDate = myCalendar.dateByAddingUnit(.DayCalendarUnit, value: 1, toDate: FromDate, options: nil)!*/
+        
+        let calendar = NSCalendar(identifier: NSCalendarIdentifierGregorian)!
+
+        let FromDate = calendar.dateBySettingHour(0, minute: 0, second: 0, ofDate: appDelegate.PhotoDate!, options: nil)!
+        let ToDate = calendar.dateByAddingUnit(.DayCalendarUnit, value: 1, toDate: FromDate, options: nil)!
+        
+        println(FromDate)
+        println(ToDate)
+        
+        
         //日付の指定
-        options.predicate = NSPredicate(format: "creationDate == %@", appDelegate.PhotoDate!);
+        options.predicate = NSPredicate(format: "(creationDate > %@) and (creationDate < %@)", FromDate,ToDate);
 
         
         

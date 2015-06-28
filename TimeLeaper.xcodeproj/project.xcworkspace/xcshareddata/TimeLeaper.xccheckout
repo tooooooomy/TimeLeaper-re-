@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>4A8C800C-6715-488E-914D-866C45FB86BA</string>
 	<key>IDESourceControlProjectName</key>
-	<string>TimeLeaper</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>9D1614D5CB93725C3A9BAD52C1F8EB2109890D0A</key>
 		<string>https://github.com/tooooooomy/TimeLeaper-re-.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>TimeLeaper.xcodeproj</string>
+	<string>TimeLeaper.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>9D1614D5CB93725C3A9BAD52C1F8EB2109890D0A</key>
