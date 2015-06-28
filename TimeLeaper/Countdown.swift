@@ -99,6 +99,10 @@ class Countdown: UIViewController {
             selector: Selector("Update"),
             userInfo: nil,
             repeats: true)
+        timer=NSTimer.scheduledTimerWithTimeInterval(1.0,target: self,
+            selector: Selector("Update2"),
+            userInfo: nil,
+            repeats: true)
         
     }
     
@@ -108,8 +112,11 @@ class Countdown: UIViewController {
         
         Nowtime()
         
-        CountTime()
         
+    }
+    func Update2(){
+        
+        CountTime()
     }
     
     func Nowtime(){
@@ -228,9 +235,27 @@ class Countdown: UIViewController {
         var minute:Int = myComponetns.minute
         var second:Int = myComponetns.second
         
-        println(year)
         
-
+        //カウントが０になったらツイッターに投稿
+        if year == 0 {
+            if month == 0{
+                if day == 0{
+                    if hour == 0{
+                        if minute == 0{
+                            if second == 0{
+                                //ツイッター投稿
+                                var twitterVC = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+                                twitterVC.setInitialText(appDelegate.ViewVal)
+                                presentViewController(twitterVC, animated: true, completion: nil)
+                               
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+  
         
         //-------補正------------------
         if (year>9) {
