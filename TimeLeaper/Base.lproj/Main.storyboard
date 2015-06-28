@@ -85,6 +85,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="SetPhotoTime:" destination="x5F-Eo-seW" eventType="touchUpInside" id="TQv-gS-Evn"/>
                                     <segue destination="7lf-ed-L9h" kind="show" id="kWS-55-UFb"/>
                                 </connections>
                             </button>
@@ -92,6 +93,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="photoPicker" destination="JLd-1n-MS6" id="i72-3J-9ah"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qlz-jv-tOH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -387,10 +391,13 @@
                                     <segue destination="MBp-Y6-Mtu" kind="show" id="8Ok-0H-WMr"/>
                                 </connections>
                             </button>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="t2m-8u-ydt">
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="t2m-8u-ydt">
                                 <rect key="frame" x="0.0" y="191" width="375" height="162"/>
                                 <date key="date" timeIntervalSinceReferenceDate="456944902.89117301">
                                     <!--2015-06-25 17:08:22 +0000-->
+                                </date>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
+                                    <!--1970-01-01 11:00:00 +0000-->
                                 </date>
                             </datePicker>
                         </subviews>

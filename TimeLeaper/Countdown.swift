@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Social
 
 class Countdown: UIViewController {
     var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
@@ -113,6 +114,7 @@ class Countdown: UIViewController {
     
     func Nowtime(){
     let myDate: NSDate = NSDate()
+        println(myDate)
 
     //カレンダーを取得.
     let myCalendar: NSCalendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!

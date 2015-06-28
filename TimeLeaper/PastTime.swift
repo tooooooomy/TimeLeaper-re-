@@ -10,6 +10,8 @@ import Photos
 
 class PastTime: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
+    var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+    
     @IBOutlet weak var collectionView: UICollectionView!
 
     
@@ -66,6 +68,13 @@ class PastTime: UIViewController, UICollectionViewDelegate, UICollectionViewData
         photoAssets = []
         
         var options = PHFetchOptions()
+        
+        //日付の指定
+        options.predicate = NSPredicate(format: "creationDate == %@", appDelegate.PhotoDate!);
+
+        
+        
+        
         options.sortDescriptors = [
             NSSortDescriptor(key: "creationDate", ascending: false)
         ]

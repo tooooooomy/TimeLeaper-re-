@@ -31,6 +31,7 @@ class FutureHome: UIViewController{
     //datepickerの値を受け渡し
     @IBAction func SetTime(sender: AnyObject) {
         appDelegate.GetDate = picker.date
+        println(appDelegate.GetDate)
     }
     
     

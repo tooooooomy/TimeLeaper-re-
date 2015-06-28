@@ -10,6 +10,10 @@ import Foundation
 
 class PastHome: UIViewController {
     
+    var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+    
+    @IBOutlet weak var photoPicker: UIDatePicker! //DatePicker
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +24,11 @@ class PastHome: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func SetPhotoTime(sender: AnyObject) {
+        
+        appDelegate.PhotoDate = photoPicker.date
+        
+    }
     
     
     //ホームに戻る

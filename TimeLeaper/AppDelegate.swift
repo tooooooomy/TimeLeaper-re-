@@ -28,11 +28,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     
-    //---------カウントダウン------
-
+    //カウントダウン
     var GetDate: NSDate?
+
     
-    //---------カウントダウン-----
+    //写真
+    var PhotoDate: NSDate?
    
 
    
